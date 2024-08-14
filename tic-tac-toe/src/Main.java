@@ -14,7 +14,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while(!gameOver){
             printBoard(board);
-            System.out.println(" Print "+player +" enter: ");
+            System.out.println("Print "+player +" enter: ");
             int row = scanner.nextInt();
             int col = scanner.nextInt();
 
@@ -25,12 +25,6 @@ public class Main {
                     System.out.println("Player "+player +" is Won");
                 }
                 else{
-//                    if(player == 'X'){
-//                        player = 'O';
-//                    }
-//                    else{
-//                        player = 'X';
-//                    }
                     player = (player == 'X') ? 'O' : 'X';
                 }
             }else{
